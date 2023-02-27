@@ -11,7 +11,6 @@ export const home = (req:Request, res:Response) => {
             title: 'Todos os animais',
             background: 'allanimals.jpg'
         }
-
     })
 }
 
@@ -25,9 +24,7 @@ export const dogs = (req:Request, res:Response) => {
             title: 'Cachorros',
             background: 'banner_dog.jpg'
         }
-
     })
-
 }
 
 export const cats = (req:Request, res:Response) => {
@@ -40,9 +37,7 @@ export const cats = (req:Request, res:Response) => {
             title: 'Gatos',
             background: 'banner_cat.jpg'
         }
-
     })
-
 }
 
 export const fishes = (req:Request, res:Response) => {
@@ -55,6 +50,5 @@ export const fishes = (req:Request, res:Response) => {
             title: 'Peixes',
             background: 'banner_fish.jpg'
         }
-
     })
 }
