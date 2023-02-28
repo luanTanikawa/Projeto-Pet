@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e ts,json,mustache src/servidor.ts"
+    "start-dev": "nodemon -e ts,json,mustache src/servidor.ts",
+    "start": "node dist/servidor.js",
+    "postinstall": "tsc && copyfiles -u 1 src/**/*.mustache dist"
   },
   "repository": {
     "type": "git",
@@ -26,6 +31,7 @@
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/mustache-express": "^1.2.2",
-    "@types/node": "^18.14.1"
+    "@types/node": "^18.14.1",
+    "copyfiles": "^2.4.1"
   }
 }
